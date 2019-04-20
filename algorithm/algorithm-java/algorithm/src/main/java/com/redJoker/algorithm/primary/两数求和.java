@@ -2,8 +2,7 @@ package com.redJoker.algorithm.primary;
 
 import java.util.*;
 
-
-public class TwoSum {
+public class 两数求和 {
     /**
      * 遇到的坑:
      *  既然是做算法题, 对于一些集合就不要去使用了,影响执行效率。即便是使用集合 也要将集合的高性能发挥出来
