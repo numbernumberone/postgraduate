@@ -9,6 +9,7 @@ object isAnagram {
 
 
   }
+//  传统方法
 //  def isAnagram(s: String, t: String): Boolean = {
 //    val sMap=scala.collection.mutable.Map[Char,Int]()
 //    val tMap=scala.collection.mutable.Map[Char,Int]()
