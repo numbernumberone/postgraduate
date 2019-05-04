@@ -4,7 +4,8 @@ import scala.annotation.tailrec
 import scala.collection.mutable
 
 object isValid {
-
+/** 有效括号
+*/
   def main(args: Array[String]): Unit = {
 
     println(isValid("((({)}))"))
