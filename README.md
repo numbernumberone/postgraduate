@@ -1,2 +1,2 @@
 # -
-we will win  !!! WWW
+we will win  !!!
