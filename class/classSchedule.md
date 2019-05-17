@@ -6,6 +6,6 @@ TCP为什么是三次握手？ ------------by black joker
 
 
 question
-1 什么数据库是引擎
-
+1 什么数据库是引擎 ？
+2 nginx 是什么？
 
