@@ -56,8 +56,4 @@ object isValid {
 
     checkValid(0, Nil)
   }
-
-
-
-
 }
