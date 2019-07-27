@@ -2,10 +2,11 @@ package com.redJoker.datastructure.LinearTable;
 
 
 public class DoubleList<E> {
-    private Node head = new Node(null,null);
+    private Node head = new Node(null, null);
 
     /**
      * add链表节点
+     *
      * @param data
      * @return
      */
@@ -14,6 +15,7 @@ public class DoubleList<E> {
 
     /**
      * 删除节点
+     *
      * @param data
      * @return
      */
@@ -23,6 +25,7 @@ public class DoubleList<E> {
 
     /**
      * 返回某一个节点下的数据
+     *
      * @param index
      * @return
      */
@@ -32,6 +35,7 @@ public class DoubleList<E> {
 
     /**
      * 打印链表
+     *
      * @return
      */
     @Override
@@ -42,7 +46,7 @@ public class DoubleList<E> {
 
 }
 
-class DoubleNode<E>{
+class DoubleNode<E> {
     E data;
     DoubleNode next;
     DoubleNode prev;
@@ -52,5 +56,7 @@ class DoubleNode<E>{
         this.next = next;
         this.prev = prev;
     }
-    public DoubleNode() {}
+
+    public DoubleNode() {
+    }
 }

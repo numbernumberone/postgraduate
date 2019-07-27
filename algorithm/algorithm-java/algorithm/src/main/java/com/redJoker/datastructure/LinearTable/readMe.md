@@ -26,6 +26,30 @@
         详见 com.redJoker.datastructure.LinearTable.SingleList
         
     双向链表 双向链表是在单链表的基础上实现的, 需要在原有的基础上加prev指针即可。
+        新增: 
+            头部新增:  原来是(head节点 -> A -> B...) 现在需要(head节点 -> NEW -> A -> B...)
+                1. NEW节点next指向A节点
+                2. A节点的的pre由原来的指向NULL变为指向NEW节点
+                3. 然后把head节点的next由指向A变为指向NEW
+                4. 将NEW节点的pre指向NULL
+            尾部新增: 原来是(head节点 -> A -> B)  现在需要(head节点 -> A -> B -> NEW)
+                1. B节点的next由之前的NULL指向NEW
+                2. NEW节点的pre指向B节点
+            任意部位新增: 原来是(head节点 -> A -> B...) 现在需要(head节点 -> A -> NEW -> B)
+                1. NEW节点的next指向B节点
+                2. B节点的pre指向由A指向变为指向NEW节点
+                3. NEW节点的pre指向A节点
+                4. A节点的next指向由B到NEW
+        删除: 
+            头节点删除: 原来是(head -> A -> B ...)  现在需要(head -> B ...)
+                1. head节点的next指向由原来的A指向指向B
+                2. B节点的pre指向由原来的A指向head 
+            尾节点删除: 原来是(head -> A -> B -> C)  现在需要(head -> A -> B)
+                1. B节点的next指向由原来的指向B变为指向NULL
+                2. B节点的pre指向 由原来的A指向变为NULL
+            删除任意节点: 原来是(head -> A -> B -> C)  现在需要(head -> A -> C)
+                
+    
     
         
      
