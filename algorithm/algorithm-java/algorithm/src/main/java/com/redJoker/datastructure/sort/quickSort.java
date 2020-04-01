@@ -1,4 +1,4 @@
-package com.redJoker.algorithm.sort;
+package com.redJoker.datastructure.sort;
 
 public class quickSort {
 
